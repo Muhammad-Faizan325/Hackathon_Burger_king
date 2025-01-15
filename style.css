@@ -1,0 +1,416 @@
+@import url(https://db.onlinewebfonts.com/c/565a681be0eb6f1d92c6bc57c629ea35?family=Flame+Bold);
+
+@import url(https://db.onlinewebfonts.com/c/29eee6d957e73039264c9de9fd949d20?family=Flame+Sans);
+
+:root {
+  --theme-color-1: #502314;
+  --theme-color-2: #f8f1e7;
+  --theme-color-3: #d72403;
+  --hover-color: #a71b00;
+  --white-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 100%;
+  background-color: var(--theme-color-2);
+}
+
+main .header {
+  background-color: var(--theme-color-2);
+  top: 0;
+  position: sticky;
+  height: 55px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(117, 117, 117, 1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(117, 117, 117, 1);
+  box-shadow: 0px 1px 5px 0px rgba(117, 117, 117, 1);
+}
+
+main .header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .header .navbar .menu i:hover {
+  cursor: pointer;
+}
+
+main .header .navbar .header-icons {
+  font-size: 20px;
+  color: var(--theme-color-1);
+}
+
+main .header .navbar .cart {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+main .header .navbar .cart i:hover {
+  cursor: pointer;
+}
+
+main .header .navbar .cart .cart-btn {
+  border: none;
+  background-color: var(--theme-color-3);
+  color: var(--white-color);
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: all ease 0.3s;
+  font-family: "Flame Sans";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+main .header .navbar .cart .cart-btn i {
+  padding-right: 5px;
+}
+
+main .header .navbar .cart .cart-btn:hover {
+  cursor: pointer;
+  background-color: var(--hover-color);
+}
+
+/* Body */
+
+main .body-container {
+  max-width: 100%;
+}
+
+main .body-container .hero-section {
+  padding: 0px 100px;
+  max-width: 100%;
+  display: flex;
+}
+
+main .body-container .hero-section .left {
+  padding-right: 60px;
+  width: 30%;
+}
+
+main .body-container .hero-section .right {
+  width: 70%;
+}
+
+main .body-container .hero-section .right img {
+  width: 100%;
+}
+
+.heading {
+  font-size: 60px;
+  font-family: "Flame Bold";
+  color: var(--theme-color-1);
+}
+
+.btns {
+  font-size: 16px;
+  font-family: "Flame Sans";
+  font-weight: 600;
+  padding: 14px 16px;
+  border: none;
+  background-color: transparent;
+  color: var(--white-color);
+  border-radius: 25px;
+}
+
+.btns-container .btns i {
+  padding-right: 10px;
+}
+
+.btns-container .order-btn {
+  transition: all ease 0.3s;
+  background-color: var(--theme-color-3);
+}
+
+.btns-container .order-btn:hover {
+  background-color: var(--hover-color);
+}
+
+.btns-container .delivery-btn {
+  transition: all ease 0.3s;
+  border: 1px solid var(--theme-color-1);
+  color: var(--theme-color-1);
+}
+
+.btns-container .delivery-btn:hover {
+  background-color: #dfd2c8;
+}
+
+.deals-container {
+  padding: 0px 100px;
+  max-width: 100%;
+}
+
+.deal {
+  border-radius: 15px;
+}
+
+.banner img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+}
+
+.deal {
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 1px 2.22px;
+}
+
+.d-heading {
+  font-family: "Flame Bold";
+  /* font-family: "Flame Sans"; */
+  font-weight: 200;
+  font-size: 23px;
+  color: var(--theme-color-1);
+}
+
+.d-detail,
+.d-terms {
+  font-family: "Flame Sans";
+  font-weight: 200;
+  font-size: 13px;
+  color: var(--theme-color-1);
+}
+
+.d-btn {
+  transition: all ease 0.3s;
+  color: var(--theme-color-1);
+  border: 1px solid var(--theme-color-1);
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.d-btn:hover {
+  background-color: #dfd2c8;
+}
+
+.app-section {
+  background-color: #eee8de;
+  margin-top: 150px;
+}
+
+.app-section .container .left .app-banner {
+  margin-top: -50px;
+  width: 450px;
+}
+
+.app-section .container .left {
+  text-align: center;
+  width: 50%;
+}
+
+.app-section .container .right {
+  width: 50%;
+}
+
+.app-heading {
+  font-size: 48px;
+}
+
+.app-detail {
+  font-size: 14px;
+}
+
+.copy {
+  background-color: var(--theme-color-1);
+  height: 110px;
+}
+
+.copy-detail {
+  font-family: "Flame Sans";
+  font-size: 12px;
+}
+
+footer {
+  left: 0;
+  right: 0;
+  background-color: #f8f1e7;
+  bottom: 0;
+  position: fixed;
+  height: 60px;
+  max-width: 100%;
+}
+
+.foot-resp {
+  width: 100%;
+}
+
+.nav-cont:hover {
+  cursor: pointer;
+}
+
+.nav-cont i {
+  color: var(--theme-color-1);
+  font-size: 20px;
+}
+
+.nav-cont p {
+  color: var(--theme-color-1);
+  font-size: 14px;
+}
+
+.responsive-app {
+  display: none;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 480px) {
+
+  main .body-container .hero-section {
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  main .body-container .hero-section .left {
+    margin: 0px auto;
+    width: 100%;
+  }
+
+  main .body-container .hero-section .left .heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  main .body-container .hero-section .left {
+    padding: 20px;
+    width: 100%;
+  }
+
+  main .body-container .hero-section .right {
+    width: 100%;
+  }
+
+  main .body-container .hero-section .right img {
+    width: 100%;
+  }
+
+  .app-section {
+    padding: 30px 0px;
+  }
+
+  .app-section .container .left .app-banner {
+    display: none;
+  }
+
+  .app-section .right {
+    padding-left: 20px;
+  }
+
+  .responsive-app {
+    margin-left: -20px;
+    width: 200px;
+    display: block;
+  }
+
+  .app-heading {
+    font-size: 25px;
+  }
+
+  .platforms {
+    display: flex;
+    gap: 10px;
+  }
+
+  .platforms img {
+    width: 100px;
+  }
+
+  .copy {
+    height: 120px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  main .body-container {
+    width: 100%;
+  }
+
+  main .body-container .hero-section {
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  main .body-container .hero-section .left {
+    margin: 0px auto;
+    width: 100%;
+  }
+
+  main .body-container .hero-section .left .heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  main .body-container .hero-section .left {
+    padding: 10px;
+    width: 100%;
+  }
+
+  main .body-container .hero-section .right {
+    width: 100%;
+  }
+
+  main .body-container .hero-section .right img {
+    width: 100%;
+  }
+
+  .app-section {
+    padding: 30px 0px;
+  }
+
+  .app-section .container .left .app-banner {
+    display: none;
+  }
+
+  .app-section .right {
+    padding-left: 20px;
+  }
+
+  .responsive-app {
+    margin-left: -20px;
+    width: 200px;
+    display: block;
+  }
+
+  .app-heading {
+    font-size: 25px;
+  }
+
+  .platforms {
+    display: flex;
+    gap: 10px;
+  }
+
+  .platforms img {
+    width: 100px;
+  }
+
+  .copy {
+    height: 120px;
+  }
+
+  .deals-container {
+    width: 100%;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .deal {
+    width: 100%;
+  }
+
+
+
+}

@@ -92,7 +92,7 @@
   display: none;
 }
 
-/*  */
+/* Header */
 
 main {
   max-width: 100%;
@@ -220,6 +220,8 @@ main .body-container .hero-section .right img {
   background-color: #dfd2c8;
 }
 
+/* deals section*/
+
 .deals-container {
   padding: 0px 100px;
   max-width: 100%;
@@ -269,6 +271,8 @@ main .body-container .hero-section .right img {
   background-color: #dfd2c8;
 }
 
+/* app section */
+
 .app-section {
   background-color: #eee8de;
   margin-top: 150px;
@@ -296,6 +300,8 @@ main .body-container .hero-section .right img {
   font-size: 14px;
 }
 
+/* copyright section */
+
 .copy {
   background-color: var(--theme-color-1);
   height: 110px;
@@ -305,6 +311,8 @@ main .body-container .hero-section .right img {
   font-family: "Flame Sans";
   font-size: 12px;
 }
+
+/* footer */
 
 footer {
   z-index: 1;
@@ -411,6 +419,7 @@ footer {
 /* responsive */
 
 @media only screen and (max-width: 480px) {
+
   main .body-container .hero-section {
     padding: 0;
     display: flex;
@@ -558,11 +567,51 @@ footer {
   }
 } */
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Navbar */
+
+  .header {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    flex: 1;
+    /* border: 1px solid red; */
+  }
+
+  .logo-container {
+    flex: 1;
+    /* border: 1px solid red; */
+  }
+
+  .cart {
+    flex: 1;
+    /* border: 1px solid red; */
+  }
+
+  .cart-btn {
+    display: none;
+  }
+
 
   /* account page */
+
+  .ac-page .body-container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .link-p {
+    text-align: start;
+  }
 
   .ac-heading {
     font-size: 25px;
@@ -587,8 +636,14 @@ footer {
   }
 
   .link-container {
-    padding: 0.5rem;
+    padding: 0px;
+    /* margin-left: -70px; */
+    width: 250px;
   }
+
+  /* .link-container {
+    padding: 0.5rem;
+  } */
 
   .link-heading {
     font-size: 1.2rem;
@@ -613,7 +668,11 @@ footer {
     font-size: 1rem;
   }
 
-  /* Navbar adjustments */
+  /*Body adjustments */
+
+  .body-container {
+    padding: 0px;
+  }
 
   main .body-container .hero-section {
     padding: 0;
@@ -699,7 +758,7 @@ footer {
   }
 
   .platforms img {
-    max-width: 80px;
+    max-width: 70px;
   }
 
   /* copyright section */
@@ -731,11 +790,6 @@ footer {
 
   .hero-section button {
     font-size: 0.8rem;
-    padding: 10px;
-  }
-
-  .account {
-    height: 400px;
     padding: 10px;
   }
 
